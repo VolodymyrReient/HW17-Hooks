@@ -1,6 +1,6 @@
 import React, {useState, useEffect } from "react";
 
-function Timer({time, step, autostart}) {
+const Timer = ({time, step, autostart}) => {
     const [counter, setCounter] = useState(time)
     const [start, setStart] = useState(autostart);
     const interval = step/1000;
@@ -38,4 +38,5 @@ function Timer({time, step, autostart}) {
     </div>
     )
 }
+
 export default Timer;
